@@ -7,11 +7,11 @@ function App() {
 
   const [usersList,setUsersList]=useState([])
 
-const getUserDataHandler=(uName,uAge)=>{
+const getUserDataHandler=(uName,uAge,uCollegeName)=>{
 
   setUsersList((prev)=>{
 
-    return [...prev,{id:Math.random().toString(),name:uName,age:uAge}]
+    return [...prev,{id:Math.random().toString(),name:uName,age:uAge,college:uCollegeName}]
 
   })
 
